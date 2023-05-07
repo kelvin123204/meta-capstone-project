@@ -1,23 +1,16 @@
-import React from 'react';
-import './App.css';
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
-import Hero from './Components/Hero/Hero';
+import React from "react";
+import "./App.css";
+import Home from "./Pages/Home";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import ReservePage from "./Pages/ReservePage";
+
+const router = createBrowserRouter([
+  { path: "/", element: <Home /> },
+  { path: "/reserve", element: <ReservePage /> },
+]);
 
 function App() {
-  return (
-    <React.Fragment>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Hero />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </React.Fragment>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
