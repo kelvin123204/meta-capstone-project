@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import ReservePage from "./Pages/ReservePage";
+import ReservePage from "./pages/ReservePage";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },

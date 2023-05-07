@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../asset/Logo.svg";
 import Contact from "./Contact";
-import Nav from "../Header/Nav";
+import Nav from "../header/Nav";
 import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
