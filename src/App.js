@@ -1,10 +1,22 @@
+import React from 'react';
 import './App.css';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import Hero from './Components/Hero/Hero';
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <React.Fragment>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Hero />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </React.Fragment>
   );
 }
 
